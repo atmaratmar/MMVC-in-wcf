@@ -1,0 +1,66 @@
+﻿@model ServiceReference2.PersonDTO
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>PersonDTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Adresse)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Adresse)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Distrikt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Distrikt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Efternavn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Efternavn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fornavn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fornavn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Personnr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Personnr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Postnr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Postnr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tlfnr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tlfnr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Version)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Version)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
